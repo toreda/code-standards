@@ -1,0 +1,41 @@
+{
+  "name": "@toreda/code-standards",
+  "version": "0.0.1",
+  "description": "Official Toreda code standards for TypeScript & JavaScript NPM packages.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "yarn build:prod",
+    "build:prod": "yarn gulp --prod",
+    "build:dev": "yarn gulp --dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toreda/code-standards.git"
+  },
+  "keywords": [
+    "code standard",
+    "code standards",
+    "code rules",
+    "toreda",
+    "toreda inc",
+    "guidelines",
+    "typescript",
+    "javascript"
+  ],
+  "author": "Toreda, Inc.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/toreda/code-standards/issues"
+  },
+  "homepage": "https://github.com/toreda/code-standards#readme",
+  "devDependencies": {
+    "@toreda/build-tools": "^0.5.9",
+    "@toreda/prettier-config": "^1.0.1",
+    "@types/gulp": "^4.0.9",
+    "@types/node": "^16.11.12",
+    "prettier": "^2.5.1",
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.5.2"
+  }
+}
