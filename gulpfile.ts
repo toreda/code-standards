@@ -46,21 +46,21 @@ function buildPages(): NodeJS.ReadWriteStream {
   return build.gulpSteps.renderNunjucksHtml(
     "./src/html/templates",
     "./src/html/pages/**.+(html|njk)",
-    "./dist/"
+    "./docs/"
   );
 }
 
 function createDist(): Promise<NodeJS.ReadWriteStream> {
-  build.gulpSteps.createDir("./dist", true);
-  return build.gulpSteps.createDir('./dist/assets', true);
+  build.gulpSteps.createDir("./docs", true);
+  return build.gulpSteps.createDir('./docs/assets', true);
 }
 
 function cleanDist(): Promise<NodeJS.ReadWriteStream> {
-  return build.gulpSteps.cleanDir("./dist", true);
+  return build.gulpSteps.cleanDir("./docs", true);
 }
 
 function copyAssets(): NodeJS.ReadWriteStream {
-  return build.gulpSteps.copyContents("./src/html/assets/**", "./dist/assets");
+  return build.gulpSteps.copyContents("./src/html/assets/**", "./docs/assets");
 }
 
 exports.default = series(createDist, cleanDist, buildPages, copyAssets);

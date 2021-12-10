@@ -37,6 +37,7 @@
     "@toreda/prettier-config": "^1.0.1",
     "@types/gulp": "^4.0.9",
     "@types/node": "^16.11.12",
+    "jekyll": "^3.0.0-beta1",
     "prettier": "^2.5.1",
     "ts-loader": "^9.2.6",
     "typescript": "^4.5.2"
