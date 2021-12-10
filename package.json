@@ -28,6 +28,9 @@
   "bugs": {
     "url": "https://github.com/toreda/code-standards/issues"
   },
+  "resolutions": {
+    "glob-parent": "^5.1.2"
+  },
   "homepage": "https://github.com/toreda/code-standards#readme",
   "devDependencies": {
     "@toreda/build-tools": "^0.5.9",
